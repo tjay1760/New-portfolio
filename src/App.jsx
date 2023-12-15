@@ -1,11 +1,15 @@
-
+import { BrowserRouter } from "react-router-dom";
+import {About, Contact , Experience, Feedbacks,Hero,Works,Tech,Navbar, StarsCanvas, BallCanvas} from './components';
 function App() {
 
 
   return (
     <>
       <div>
-        My Portfolio
+        <BallCanvas/>
+        <About/>
+        <StarsCanvas/>
+        My developer portfolio
       </div>
     </>
   )
