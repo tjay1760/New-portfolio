@@ -32,7 +32,7 @@ transition={{
   repeatType: 'loop'
 
 }}
-className ='w-3 h-3 rounded bg-secondary'
+className ='w-3 h-3 rounded bg-secondary mb-1'
 />
           </div>
         </a>
