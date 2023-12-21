@@ -4,7 +4,8 @@ import { styles } from '../style'
 import { SectionWrapper } from '../hoc'
 import { slideIn } from '../utils/motion'
 import { EarthCanvas } from './canvas'
-// import {emaijs} from '@emailjs/browser'
+import emailjs from '@emailjs/browser'
+
 
 const Contact = () => {
   const formRef = useRef;
@@ -13,10 +14,43 @@ name:"",
 email:"",
 message:""
   });
-  const [loading, isLoading] = useState(false);
-  const handleChange=()=>{
+  const [loading, setLoading] = useState(false);
+  const handleChange=(e)=>{
+    const {name,value} = e.target
+    setForm({...form,[name]:value})
   }
-  const handleSubmit =()=>{}
+  const handleSubmit =(e)=>{
+    e.preventDefault();
+    setLoading(true);
+    //
+// 
+// 
+    emailjs.send(
+      'service_m3cfspq',
+      'template_hni291l',
+      {
+        from_name: form.name,
+        to_name: 'John',
+        from_email: form.email,
+        to_email:'mcjthiongo@gmail.com',
+        message: form.message 
+      },'CJqocswu4CsSs0Sy-' 
+       ).then(
+        ()=>{
+          setLoading(false)
+          alert('Thank you, I will get back to you soon!')
+ setForm({
+  name:'',
+  email:'',
+  message:''
+ }) 
+        }, (error) =>{
+          setLoading(false)
+          console.log(error)
+          alert("Message not sent: Something went wrong")
+        }
+       )
+  }
   return (
     <div
     className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
@@ -37,6 +71,7 @@ className = 'mt-12 flex flex-col gap-8'
   type="text"
   name="name" 
   value={form.name} 
+  onChange={handleChange}
   placeholder='What is your name?'
   className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium'
   />
@@ -47,6 +82,7 @@ className = 'mt-12 flex flex-col gap-8'
   type="email"
   name="email" 
   value={form.email} 
+  onChange={handleChange}
   placeholder='What is your email?'
   className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium'
   />
@@ -57,6 +93,7 @@ className = 'mt-12 flex flex-col gap-8'
   rows ='7' 
   name="message" 
   value={form.message} 
+  onChange={handleChange}
   placeholder='What do yo want to say?'
   className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium'
   />
