@@ -7,7 +7,7 @@ const Loader = () => {
     <Html>
       <span className='canvas-loader'></span>
       <p style={{ fontSize: 14, color: '#f1f1f1', fontWeight: 800, marginTop: 40, width:'max-content' }}>
-        {progress ? `Rendered ${(progress).toFixed(2)}%` : 'Fetching computer...'}
+        {progress ? `${(progress).toFixed(2)}%` : 'Fetching...'}
       </p>
     </Html>
   );
