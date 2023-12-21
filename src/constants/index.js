@@ -1,4 +1,8 @@
 import {
+  jarian,
+  upwork,
+  jkuat,
+  finlays,
     mobile,
     backend,
     creator,
@@ -15,14 +19,12 @@ import {
     git,
     figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
     carrent,
     jobit,
     tripguide,
     threejs,
+    python,
+    ruby,
   } from "../assets";
   
   export const navLinks = [
@@ -46,24 +48,24 @@ import {
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "Mobile Developer",
       icon: mobile,
     },
     {
-      title: "Backend Developer",
+      title: "UI/UX Designer",
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Content creator",
       icon: creator,
     },
   ];
   
   const technologies = [
-    {
-      name: "HTML 5",
-      icon: html,
-    },
+    // {
+    //   name: "HTML 5",
+    //   icon: html,
+    // },
     {
       name: "CSS 3",
       icon: css,
@@ -112,59 +114,60 @@ import {
       name: "docker",
       icon: docker,
     },
+    {
+      name: "python",
+      icon: python,
+    },
+    {
+      name: "ruby",
+      icon: ruby,
+    },
   ];
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "Full Stack Developer",
+      company_name: "Freelance",
+      icon: upwork,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
       date: "Jan 2023 - Present",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Conducting code reviews and providing constructive feedback to client websites",
+      ],
+    },
+    {
+      title: "Director",
+      company_name: "Jarian Hortscapes",
+      icon: jarian,
+      iconBg: "#000",
+      date: "Jan 2014 - Present",
+      points: [
+        " Designed and installed over 100 landscape designs for local and international clients",
+        "Propagated and sold and installed over 200 species of ornamental plants",
+      ],
+    },
+    {
+      title: "Research Assistant",
+      company_name: "JKUAT",
+      icon: jkuat,
+      iconBg: "#383E56",
+      date: "Jan 2012 - Mar 2011",
+      points: [
+        "Educated farmers on the use of biopesticides and impact on improving harvest outcomes",
+        "Drafted reports and publications on the efficacy of various biopesticides in pest control and management",
+      ],
+    },
+    {
+      title: "Research Assistant(Intern)",
+      company_name: "Finlays",
+      icon: finlays,
+      iconBg: "#FFF",
+      date: "Jan 2011 - April 2011",
+      points: [
+        " Completed a research Analyzing the efficacy of Silver Nitrate in improving the post-harvest life of flowers",
+
       ],
     },
   ];

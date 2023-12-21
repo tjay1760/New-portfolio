@@ -21,17 +21,29 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import python from "./tech/python.png";
+import ruby from './tech/ruby.png';
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import jarian from './company/jarian.png'
+import finlays from './company/finlays.png'
+import jkuat from './company/jkuat.png'
+import upwork from './company/upwork.png'
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 export {
+  ruby,
+  python,
+  jarian,
+  finlays,
+  jkuat,
+  upwork,
   logo,
   mylogo,
   backend,

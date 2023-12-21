@@ -43,9 +43,8 @@ const About = () => {
 variants={fadeIn("","",0.1,1)}
 className='mt-4 text-secondary text-[17px] max-width-3-xl leading-[30px]'
 >
-An Full stack developer crafting great web experiences with Javascript, HTML5, CSS3 Typescript, Ruby, Python 
+A Full stack developer crafting great web experiences with Javascript, HTML5, CSS3 Typescript, Ruby, Python 
 and javascript libraries and frameworks such as react, three.js, node.js and framer motion. 
-I&apos;m all about making web magic happen!
 <br/>
 ✨ Let&apos;s team up and bring your projects to life in the most delightful way possible. 🌟
 </motion.p>
