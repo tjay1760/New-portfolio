@@ -43,9 +43,10 @@ const About = () => {
 variants={fadeIn("","",0.1,1)}
 className='mt-4 text-secondary text-[17px] max-width-3-xl leading-[30px]'
 >
-A Full stack developer crafting great web experiences with Javascript, HTML5, CSS3 Typescript, Ruby, Python 
+I am a Full stack developer crafting great web experiences with Javascript, HTML5, CSS3 Typescript, Ruby, Python 
 and javascript libraries and frameworks such as react, three.js, node.js and framer motion. 
 <br/>
+I&apos;m not just about code; my design skills are equally strong, enabling me to create visually appealing and user-friendly interfaces. With a keen eye for aesthetics and functionality, I integrate the latest design trends and principles to ensure your projects not only work flawlessly but also look modern and engaging. 🎨👨‍💻<br/>
 ✨ Let&apos;s team up and bring your projects to life in the most delightful way possible. 🌟
 </motion.p>
 <div className='mt-20 flex flex-wrap gap-10'>

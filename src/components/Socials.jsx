@@ -1,4 +1,4 @@
-import { githublack, youtube, twitter, linkedin } from "../assets";
+import { githublack, youtube, twitter, linkedin, emailIcon } from "../assets";
 
 export const Socials = () => {
   return (
@@ -10,7 +10,7 @@ export const Socials = () => {
           </a>
         </li>
         <li>
-          <a href="lnkedin.com/in/john-murianki-thiongo" target="_blank" rel="noopener noreferrer">
+          <a href="https://linkedin.com/in/john-murianki-thiongo" target="_blank" rel="noopener noreferrer">
             <img className="cursor-pointer h-5 w-5" src={linkedin} alt="LinkedIn"/>
           </a>
         </li>
@@ -22,6 +22,11 @@ export const Socials = () => {
         <li>
           <a href="https://www.youtube.com/channel/UCcEeMgWcGmDL6w5Ow22TALg" target="_blank" rel="noopener noreferrer">
             <img className="cursor-pointer h-5 w-5" src={youtube} alt="YouTube"/>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:mcjthiongo@gmail.com">
+            <img className="cursor-pointer h-5 w-5" src={emailIcon} alt="Email"/>
           </a>
         </li>
       </ul>

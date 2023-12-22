@@ -49,7 +49,9 @@ import youtube from './youtube-icon.png'
 import linkedin from './linkedin-icon.png'
 import twitter from './X-logo.png'
 import githublack from './github-mark.svg'
+import emailIcon from './gmail_icon.png'
 export {
+  emailIcon,
   youtube,
   linkedin,
   twitter,
