@@ -45,7 +45,15 @@ import spacetravellers from './space-travellers.png'
 import mathmagic from './Mathmagicians.png'
 import budgetapp from './BudgetApp.png'
 
+import youtube from './youtube-icon.png'
+import linkedin from './linkedin-icon.png'
+import twitter from './X-logo.png'
+import githublack from './github-mark.svg'
 export {
+  youtube,
+  linkedin,
+  twitter,
+  githublack,
   housebooking,
   bookstore,
   shakyscookout,
