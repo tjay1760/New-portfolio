@@ -339,5 +339,6 @@ import {
       live_link:'https://soft-malabi-8cf566.netlify.app/'
     },
   ];
+  const softSkills = ["Leadership", "Analytical Thinking", "Time management", "Collaboration", "Teamwork","Creativity"]
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, testimonials, projects, softSkills };
