@@ -1,6 +1,6 @@
 
 export const Socials = () => {
   return (
-    <div>Socials</div>
+    <div className="border-2 text-white">Socials</div>
   )
 }
