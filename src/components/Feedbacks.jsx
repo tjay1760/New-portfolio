@@ -21,7 +21,7 @@ className='bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full'
         <span className='blue-text-gradient'>@</span>{name}
       </p>
       <p className='mt-1 text-secondary text-[12px]'>
-        {designation} of {company}
+        {designation} at {company}
       </p>
       </div> 
       <img

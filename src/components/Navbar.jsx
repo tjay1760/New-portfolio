@@ -23,6 +23,12 @@ const Navbar = () => {
         <img src={mylogo} alt="logo" className='w-9 h-9 object-contain'/>
         <p className="text-white text-[18px] font-bold cursor-pointer flex" >John&nbsp;<span className='sm:block hidden'>| Murianki</span></p>
     </Link>
+    <a
+    target='_blank'
+    rel='noreferrer'
+    className='bg-violet-800 py-2 px-4 rounded' 
+    href='https://docs.google.com/document/d/1ylaUe-3KD5ye3Hxs2XQGRQIRz4Y_3gfwLWIPjW-0Vjw/edit?usp=sharing'>
+      View Resume</a>
 <ul className='list-none hidden sm:flex flex-row gap-10 '>
   {navLinks.map((link)=>(
     <li key= {link.id} className={`${

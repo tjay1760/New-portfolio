@@ -38,8 +38,20 @@ import upwork from './company/upwork.png'
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import housebooking from "./house-booking.png"
+import bookstore from './bookstore.png'
+import shakyscookout from './Shakyscookout.png'
+import spacetravellers from './space-travellers.png'
+import mathmagic from './Mathmagicians.png'
+import budgetapp from './BudgetApp.png'
 
 export {
+  housebooking,
+  bookstore,
+  shakyscookout,
+  spacetravellers,
+  mathmagic,
+  budgetapp,
   live,
   ruby,
   python,

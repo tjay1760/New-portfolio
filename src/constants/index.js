@@ -1,4 +1,10 @@
 import {
+  housebooking,
+  shakyscookout,
+  spacetravellers,
+  budgetapp,
+  bookstore,
+  mathmagic,
   jarian,
   upwork,
   jkuat,
@@ -175,56 +181,57 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
+        "John approaches tasks with a strong commitment to delivering high-quality results, often completing them ahead of schedule.",
+      name: "Kgomotso Nacane",
+      designation: "Student",
+      company: "Microverse",
+      image: "https://media.licdn.com/dms/image/D4D35AQHu61_Ddvlb8w/profile-framedphoto-shrink_800_800/0/1689996057907?e=1703808000&v=beta&t=mqo5m1qLQ_Ji-bWbn6sjYWZjRygd1aW5fYI8yhX9KDI",
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
+        "John is a talented developer who uplifts every project and team. ",
+      name: "Hassan Shakur",
+      designation: "Student",
+      company: "Microverse",
+      image: "https://media.licdn.com/dms/image/D4E35AQHW44XlSKKpFQ/profile-framedphoto-shrink_800_800/0/1700224390643?e=1703808000&v=beta&t=wdvltw1IzenENoLHBsTqajOgdXDaKlmuy7wB14_df6k",
     },
     {
       testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+        "John is exactly the sort of software developer any company would love.",
+      name: "Mohammed AlFuhidy",
+      designation: "Software Engineer",
+      company: "FastN",
+      image: "https://media.licdn.com/dms/image/D4E03AQEHg3Ab4txdVg/profile-displayphoto-shrink_800_800/0/1700552456670?e=1708560000&v=beta&t=yn8TP9wpDEih95pw-8yf6yV_t_u-EehLrXnunplIzsM",
     },
   ];
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "House Booking",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "House Booking is a web application that offers a diverse selection of luxurious houses. Find your slice of paradise, effortlessly choose your shelter, and make memories that last a lifetime with a house of your choice.",
       tags: [
         {
-          name: "react",
+          name: "ruby",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "postgreSQL",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "React",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: housebooking,
+      source_code_link: "https://github.com/Kgomotso196/House-Booking-Frontend",
+      live_link: "https://houseboooking01.onrender.com/"
     },
     {
-      name: "Job IT",
+      name: "Space Travellers",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Space Travelers Hub is a single-page web application that fetches rockets and missions from the SpaceX API. Users can book and cancel their reservations for rockets, missions, and myProfile to show the reserved rockets and missions.",
       tags: [
         {
           name: "react",
@@ -235,24 +242,47 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "CSS3",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: spacetravellers,
+      source_code_link: "https://github.com/Mofuhidy/space-travelers--hub",
+      live_link: "https://endearing-profiterole-e64e44.netlify.app/"
     },
     {
-      name: "Trip Guide",
+      name: "Bookstore",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "The bookstore is a web application developed in react that helps users manage their book reads. Users can also be able to view the progress of their current reads.",      
       tags: [
         {
-          name: "nextjs",
+          name: "React",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "CSS3",
+          color: "green-text-gradient",
+        },
+        {
+          name: "HTML5",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: bookstore,
+      source_code_link: "https://github.com/tjay1760/mybookstore",
+      live_link:"https://magical-hotteok-98fc4f.netlify.app/"
+    },
+    {
+      name: "Budget App",
+      description:
+        "The budget app is a ruby on rails project that helps users with their financial analysis. With the project users can be able to manage their spending and track expenses.",
+      tags: [
+        {
+          name: "Ruby",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "PostgreSQL",
           color: "green-text-gradient",
         },
         {
@@ -260,20 +290,43 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: budgetapp,
+      source_code_link: "https://github.com/tjay1760/Budget-App",
+      live_link: ' https://budgetapp-g2pb.onrender.com/'
     },
     {
-      name: "Trip Guide",
+      name: "Shakys Cookout ",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "The budget app is a ruby on rails project that helps users with their financial analysis. With the project users can be able to manage their spending and track expenses.",
       tags: [
         {
-          name: "nextjs",
+          name: "HTML5",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "CSS3",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Javascript",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: shakyscookout,
+      source_code_link: "https://github.com/tjay1760/Shakys-Cookout",
+      live_link: "https://gorgeous-youtiao-23872f.netlify.app/"
+    },
+    {
+      name: "Math Magicians",
+      description:
+        "MAth magicians is a web app that aloows users to perfo their calculations. Always inspired with a random quote to aid their maths",
+      tags: [
+        {
+          name: "Javascript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "React",
           color: "green-text-gradient",
         },
         {
@@ -281,50 +334,9 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: mathmagic,
+      source_code_link: "https://github.com/tjay1760/Math-magic",
+      live_link:'https://soft-malabi-8cf566.netlify.app/'
     },
   ];
   
