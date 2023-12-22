@@ -10,8 +10,8 @@ const Tech = () => {
   return (
     <div>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Skills I have</p>
-        <h2 className={styles.sectionHeadText}>Technologies</h2>
+        <p className={styles.sectionSubText}>What I Know</p>
+        <h2 className={styles.sectionHeadText}>Technologies.</h2>
       </motion.div>
       <div className='flex flex-row flex-wrap justify-center gap-10'>
         {technologies.map((tech) => (
@@ -20,10 +20,10 @@ const Tech = () => {
           </div>
         ))}
       </div>
-      <h2 className={styles.sectionHeadText}>Soft Skills</h2>
+      <h2 className={`mt-5 ${styles.sectionHeadText}`}>Soft Skills.</h2>
       <div className='flex flex-row flex-wrap justify-center gap-10'>
         {softSkills.map((skill, index) => (
-          <div className='border-2 border-violet-400 rounded-xl text-white p-4 m-2 hover:bg-slate-900 ' key={index}>
+          <div className='border-2 border-violet-400 rounded-xl text-white p-4 m-2 hover:bg-slate-900' key={index}>
             {skill}
           </div>
         ))}
