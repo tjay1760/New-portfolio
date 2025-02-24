@@ -9,8 +9,8 @@ import { fadeIn, textVariant } from '../utils/motion'
 
 const ProjectCard =({index, name,description,tags,image,source_code_link,live_link})=>{
 return(
-  <motion.div
-  variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+  <div
+  // variants={fadeIn("up", "spring", index * 0.5, 0.75)}
   >
     <Tilt
     options ={{
@@ -18,7 +18,7 @@ return(
       scale: 1,
       speed: 450
     }}
-    className ='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+    className ='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full border-2'
     >
 <div className="relative w-full h-[230px]">
 <img
@@ -65,7 +65,7 @@ className='w-1/2 h-1/2 object-contain'
 )}
 </div>
     </Tilt>
-  </motion.div>
+  </div>
 )
 }
 const Works = () => {
@@ -85,7 +85,7 @@ variants={textVariant()}
 This section demonsrates the application of my skills using real 🌐 examples 
 </motion.p>
 </div>
-<div className='mt-20 flex flex-wrap gap-7'>
+<div className='mt-20 flex flex-wrap gap-7 border-red-500'>
 {projects.map(
   (project, index)=>(
     <ProjectCard key ={`project-${index}`} index={index} {...project}/>

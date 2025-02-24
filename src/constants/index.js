@@ -30,7 +30,7 @@ import {
     tripguide,
     threejs,
     python,
-    ruby,
+    ruby,troos,shakur,fuhidy
   } from "../assets";
   
   export const navLinks = [
@@ -183,17 +183,17 @@ import {
       testimonial:
         "John approaches tasks with a strong commitment to delivering high-quality results, often completing them ahead of schedule.",
       name: "Kgomotso Nacane",
-      designation: "Student",
-      company: "Microverse",
-      image: "https://media.licdn.com/dms/image/D4D35AQHu61_Ddvlb8w/profile-framedphoto-shrink_800_800/0/1689996057907?e=1703808000&v=beta&t=mqo5m1qLQ_Ji-bWbn6sjYWZjRygd1aW5fYI8yhX9KDI",
+      designation: "Software Developer",
+      company: "Uncap",
+      image: troos,
     },
     {
       testimonial:
         "John is a talented developer who uplifts every project and team. ",
       name: "Hassan Shakur",
-      designation: "Student",
-      company: "Microverse",
-      image: "https://media.licdn.com/dms/image/D4E35AQHW44XlSKKpFQ/profile-framedphoto-shrink_800_800/0/1700224390643?e=1703808000&v=beta&t=wdvltw1IzenENoLHBsTqajOgdXDaKlmuy7wB14_df6k",
+      designation: "Software Developer",
+      company: "Upwork",
+      image: shakur,
     },
     {
       testimonial:
@@ -201,7 +201,7 @@ import {
       name: "Mohammed AlFuhidy",
       designation: "Software Engineer",
       company: "FastN",
-      image: "https://media.licdn.com/dms/image/D4E03AQEHg3Ab4txdVg/profile-displayphoto-shrink_800_800/0/1700552456670?e=1708560000&v=beta&t=yn8TP9wpDEih95pw-8yf6yV_t_u-EehLrXnunplIzsM",
+      image: fuhidy,
     },
   ];
   
