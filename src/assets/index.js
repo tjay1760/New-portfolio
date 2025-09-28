@@ -44,6 +44,12 @@ import shakyscookout from './Shakyscookout.png'
 import spacetravellers from './space-travellers.png'
 import mathmagic from './Mathmagicians.png'
 import budgetapp from './BudgetApp.png'
+import gtcsnap from './GTCsnapshot.png'
+import maralife from './maraLife-snapshot.png'
+import totohouse from './totohouse-snapshot.png'
+import tulibooks from './Tulibooks snapshot.png'
+import pwdsnap from './PWD_System_Snapshot.png'
+import pawaai from './pawa-snapshot.png'
 
 import youtube from './youtube-icon.png'
 import linkedin from './linkedin-icon.png'
@@ -101,5 +107,5 @@ export {
   tesla,
   carrent,
   jobit,
-  tripguide,troos,shakur,fuhidy
+  tripguide,troos,shakur,fuhidy,gtcsnap,maralife,totohouse,tulibooks,pwdsnap,pawaai
 };

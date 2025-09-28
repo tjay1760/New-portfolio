@@ -1,3 +1,5 @@
+
+
 import {
   housebooking,
   shakyscookout,
@@ -30,7 +32,7 @@ import {
     tripguide,
     threejs,
     python,
-    ruby,troos,shakur,fuhidy
+    ruby,troos,shakur,fuhidy, gtcsnap,maralife,totohouse,tulibooks,pwdsnap,pawaai,
   } from "../assets";
   
   export const navLinks = [
@@ -206,17 +208,40 @@ import {
   ];
   
   const projects = [
-    {
-      name: "House Booking",
+        {
+      name: "PWD System",
       description:
-        "House Booking is a web application that offers a diverse selection of luxurious houses. Find your slice of paradise, effortlessly choose your shelter, and make memories that last a lifetime with a house of your choice.",
+        "PWD System is a web app that manages the booking and monitoring of appointments for individuals with disabilities. The application is built using React for the frontend and NodeJs for the backend. It features a user management system, a reporting system, and a contact form.",
       tags: [
         {
-          name: "ruby",
+          name: "NodeJs",
           color: "blue-text-gradient",
         },
         {
-          name: "postgreSQL",
+          name: "React",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: pwdsnap,
+      source_code_link: "https://github.com/tjay1760/Math-magic",
+      live_link:'https://disabilityassessment.co.ke/',
+      is_private: true,
+    },
+    {
+      name: "GTC Utilities",
+      description:
+        "GTC Utilities is a property management web application that allows GTC Nairobi tenants to buy tokens online and through a mobile application online. The application is built using React for the frontend and NodeJs for the backend. It token purchasing utility using Mpesa. and a online user management system for the admin.",
+      tags: [
+        {
+          name: "Nodejs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "MongoDB",
           color: "green-text-gradient",
         },
         {
@@ -224,21 +249,22 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: housebooking,
-      source_code_link: "https://github.com/Kgomotso196/House-Booking-Frontend",
-      live_link: "https://houseboooking01.onrender.com/"
+      image: gtcsnap,
+      source_code_link: "https://github.com/tjay1760/GTC-dashboard",
+      live_link: "https://app.nairobigtc.co.ke:9443/",
+      is_private: true,
     },
     {
-      name: "Space Travellers",
+      name: "Toto House",
       description:
-        "Space Travelers Hub is a single-page web application that fetches rockets and missions from the SpaceX API. Users can book and cancel their reservations for rockets, missions, and myProfile to show the reserved rockets and missions.",
+        "Toto House is a non-profit organization that seeks to provide digital educational content to African Children. The website is built using React for the frontend and NodeJs for the backend. It features a book catalogue, a blog, and a contact form.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "javascript",
           color: "green-text-gradient",
         },
         {
@@ -246,39 +272,41 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: spacetravellers,
-      source_code_link: "https://github.com/Mofuhidy/space-travelers--hub",
-      live_link: "https://endearing-profiterole-e64e44.netlify.app/"
+      image: totohouse,
+      source_code_link: "https://github.com/tjay1760/toto-house",
+      live_link: "https://toto-house.netlify.app/",
+      is_private: true,
     },
     {
-      name: "Bookstore",
+      name: "Tuli Books",
       description:
-        "The bookstore is a web application developed in react that helps users manage their book reads. Users can also be able to view the progress of their current reads.",      
+        "Tuli Books is an online bookkeeping Application that allows users to carryout financial transactions online. The website is built using React for the frontend and NodeJs for the backend. It features a sales and purchases management system, an inventory management system, and a reporting system.",
       tags: [
         {
           name: "React",
           color: "blue-text-gradient",
         },
         {
-          name: "CSS3",
+          name: "NodeJs",
           color: "green-text-gradient",
         },
         {
-          name: "HTML5",
+          name: "TailwindCSS",
           color: "pink-text-gradient",
         },
       ],
-      image: bookstore,
-      source_code_link: "https://github.com/tjay1760/mybookstore",
-      live_link:"https://magical-hotteok-98fc4f.netlify.app/"
+      image: tulibooks,
+      source_code_link: "https://tulibooks.com/",
+      live_link:"https://github.com/tjay1760/Tuli-Books",
+      is_private: true,
     },
     {
-      name: "Budget App",
+      name: "Pawa Ai",
       description:
-        "The budget app is a ruby on rails project that helps users with their financial analysis. With the project users can be able to manage their spending and track expenses.",
+        "Pawa Ai is an african based AI platform. The website is built using React for the frontend and NodeJs for the backend. It features a chatbot, a blog, and features page.",
       tags: [
         {
-          name: "Ruby",
+          name: "NextJs",
           color: "blue-text-gradient",
         },
         {
@@ -286,25 +314,26 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "strapi",
           color: "pink-text-gradient",
         },
       ],
-      image: budgetapp,
+      image: pawaai,
       source_code_link: "https://github.com/tjay1760/Budget-App",
-      live_link: ' https://budgetapp-g2pb.onrender.com/'
+      live_link: ' https://pawa-ai.com/',
+      is_private: true,
     },
     {
-      name: "Shakys Cookout ",
+      name: "Mara Life",
       description:
-        "The budget app is a ruby on rails project that helps users with their financial analysis. With the project users can be able to manage their spending and track expenses.",
+        "Mara Life is a client website for a biopesticide company based in Kenya. The website is built using React for the frontend and NodeJs for the backend. It features a product catalogue, a blog, and a contact form.",
       tags: [
         {
-          name: "HTML5",
+          name: "TailwindCSS",
           color: "blue-text-gradient",
         },
         {
-          name: "CSS3",
+          name: "strapi",
           color: "green-text-gradient",
         },
         {
@@ -312,32 +341,12 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: shakyscookout,
-      source_code_link: "https://github.com/tjay1760/Shakys-Cookout",
-      live_link: "https://gorgeous-youtiao-23872f.netlify.app/"
+      image: maralife,
+      source_code_link: "https://github.com/tjay1760/Mara-Life",
+      live_link: "https://maralife.netlify.app/",
+      is_private: false,
     },
-    {
-      name: "Math Magicians",
-      description:
-        "MAth magicians is a web app that aloows users to perfo their calculations. Always inspired with a random quote to aid their maths",
-      tags: [
-        {
-          name: "Javascript",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "React",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: mathmagic,
-      source_code_link: "https://github.com/tjay1760/Math-magic",
-      live_link:'https://soft-malabi-8cf566.netlify.app/'
-    },
+
   ];
   const softSkills = ["Leadership", "Analytical Thinking", "Time management", "Collaboration", "Teamwork","Creativity"]
   
