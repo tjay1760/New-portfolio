@@ -7,7 +7,7 @@ import { SectionWrapper } from '../hoc'
 import { projects } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
 
-const ProjectCard =({index, name,description,tags,image,source_code_link,live_link})=>{
+const ProjectCard =({index, name,description,tags,image,source_code_link,live_link, is_private})=>{
 return(
   <div
   // variants={fadeIn("up", "spring", index * 0.5, 0.75)}
@@ -38,17 +38,19 @@ className='w-1/2 h-1/2 object-contain'
 />
 
 </div>
-<div
-onClick={()=>window.open(source_code_link,'_blank')}
-className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
->
-<img
-src={github}
-alt='github'
-className='w-1/2 h-1/2 object-contain'
-/>
+{!is_private && (
+  <div
+    onClick={() => window.open(source_code_link, '_blank')}
+    className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+  >
+    <img
+      src={github}
+      alt='github'
+      className='w-1/2 h-1/2 object-contain'
+    />
 
-</div>
+  </div>
+)}
 </div>
 </div>
 <div className='mt-5'>
