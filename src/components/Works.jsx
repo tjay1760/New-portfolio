@@ -29,7 +29,7 @@ className='w-full h-full object-cover rounded-2xl'
 <div className='absolute inset-0 flex justify-between m-3 card-img_hover'>
 <div
 onClick={()=>window.open(live_link,'_blank')}
-className='bg-gray-100 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+className='bg-gray-100 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer hover:w-48 hover:h-48 hover:bg-emerald-600'
 >
 <img
 src={live}
