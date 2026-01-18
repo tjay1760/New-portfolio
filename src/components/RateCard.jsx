@@ -3,19 +3,21 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { motion } from "framer-motion";
 import { styles } from "../style";
+import { FaArrowAltCircleRight } from "react-icons/fa";
+
 
 const Card = (level, price, features) => {
   return (
-    <div className="card_holder">
+    <div className="card_holder flex flex-col gap-4 rounded-2xl mt-3 items-center p-2 bg-black-200">
       <div className="heading">
         <h1 className="text-xl font-bold">Basic API</h1>
-        <p className="font-extralight">CRUD +Auth</p>
+        <p className="font-extralight text-sm italic">CRUD +Auth</p>
       </div>
       <div className="price">
-        <h1>$250 – $450</h1>
+        <h1 className="font-bold text-3xl">$250 – $450</h1>
       </div>
       <ul className="features">
-        <li>API development</li>
+        <li className="flex gap-2 justify-center items-center p-1"><FaArrowAltCircleRight/>API development</li>
         <li>API development</li>
         <li>API development</li>
         <li>API development</li>
@@ -25,9 +27,9 @@ const Card = (level, price, features) => {
 };
 const Heading = (heading, Description) => {
   return (
-    <div className="header border bg-black rounded max-w-fit p-4">
+    <div className="header max-w-fit p-4">
       <h1 className={styles.sectionSubText}>API Development</h1>
-      <p className="mt-3 text-white text-[17px] max-w-3xl leading-[30px]">
+      <p className="mt-1 text-white text-[17px] max-w-3xl">
         RESTful or GraphQL APIs with NodeJs, Ruby on Rails or Laravel
       </p>
       <Card />
