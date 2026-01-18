@@ -4,6 +4,8 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { motion } from "framer-motion";
 import { styles } from "../style";
 import { FaArrowAltCircleRight } from "react-icons/fa";
+import { BsCodeSquare } from "react-icons/bs";
+
 
 
 const Card = (level, price, features) => {
@@ -28,7 +30,7 @@ const Card = (level, price, features) => {
 const Heading = (heading, Description) => {
   return (
     <div className="header max-w-fit p-4">
-      <h1 className={styles.sectionSubText}>API Development</h1>
+      <h1 className={`${styles.sectionSubText} flex gap-4 items-center p-1`}><BsCodeSquare/> API Development</h1>
       <p className="mt-1 text-white text-[17px] max-w-3xl">
         RESTful or GraphQL APIs with NodeJs, Ruby on Rails or Laravel
       </p>
@@ -41,7 +43,7 @@ const RateCard = () => {
   return (
     <motion.div variants={textVariant()}>
       <div>
-        <h1 className={styles.sectionHeadText}>Rate Card.</h1>
+        <h1 className={`${styles.sectionHeadText}`}>Rate Card.</h1>
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
