@@ -522,5 +522,51 @@ import {
     }
   ]
 
+  const extraServices = [
+  {
+    "title": "M-Pesa / Airtel Integration",
+    "priceRange": "$150 – $400"
+  },
+  {
+    "title": "Custom Admin Dashboard",
+    "priceRange": "$250 – $700"
+  },
+  {
+    "title": "UI/UX Design (Figma to code)",
+    "priceRange": "$150 – $350"
+  },
+  {
+    "title": "Domain + Hosting Setup",
+    "priceRange": "$50 – $150"
+  },
+  {
+    "title": "AI Chatbot Integration",
+    "priceRange": "$300 – $700"
+  },
+  {
+    "title": "Performance Optimization",
+    "priceRange": "$250 – $450"
+  },
+  {
+    "title": "Security Audit & Updates",
+    "priceRange": "$200 – $400"
+  },
+  {
+    "title": "Tech Consultation",
+    "priceRange": "$100/hr",
+    "description": "Business automation, SaaS planning"
+  },
+  {
+    "title": "Code Review / Mentorship",
+    "priceRange": "$60/hr",
+    "description": "Code quality, best practices"
+  },
+  {
+    "title": "Workshop / Training",
+    "priceRange": "$300/day",
+    "description": "In-person or online sessions"
+  }
+]
+
   
-  export { services, technologies, experiences, testimonials, projects, softSkills, rates, popular_packages };
+  export { services, technologies, experiences, testimonials, projects, softSkills, rates, popular_packages, extraServices };

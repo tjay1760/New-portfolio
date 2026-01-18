@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 import { styles } from "../style";
 import { FaArrowAltCircleRight, FaGrinStars} from "react-icons/fa";
 import { GiStarFormation } from "react-icons/gi";
-
+import { FaPlus } from "react-icons/fa6";
 import { BsStack, BsWindow,BsCodeSquare } from "react-icons/bs";
-import { rates, popular_packages } from "../constants";
+import { rates, popular_packages, extraServices } from "../constants";
 
 
 
@@ -64,6 +64,28 @@ return(
 )
 }
 
+const MoreServices = (services) => {
+const allServices = services.services
+console.log(allServices)
+  return (
+  <div className="more-services mt-20">
+    <h1 className={`${styles.sectionHeadText} flex items-center gap-4 `}><FaPlus/>Additional Services.</h1>
+<ul className="grid grid-cols-5 gap-4">
+  {allServices.map ((service, index)=>
+  <li key={index} className="flex flex-col gap-2 border bg-black-100 hover:bg-black hover:scale-105 border-gray-900 hover:border-gray-700 p-4 rounded-xl">
+    <p className="font-base">{service.title}</p>
+    <p className='font-bold text-xl'>{service.priceRange}</p>
+    <p className="italic">{service.description}</p>
+  </li>  
+  )}
+
+
+</ul>
+
+  </div>
+)
+} 
+
 const RateCard = () => {  
   return (
     <motion.div variants={textVariant()}>
@@ -84,6 +106,7 @@ const RateCard = () => {
         <div className="cards"></div>
       </motion.div>
 <PopularPackages/>
+<MoreServices services ={extraServices}/>
     </motion.div>
   );
 };
