@@ -3,43 +3,68 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { motion } from "framer-motion";
 import { styles } from "../style";
-import { FaArrowAltCircleRight } from "react-icons/fa";
-import { BsCodeSquare } from "react-icons/bs";
+import { FaArrowAltCircleRight, FaGrinStars} from "react-icons/fa";
+import { GiStarFormation } from "react-icons/gi";
+
+import { BsStack, BsWindow,BsCodeSquare } from "react-icons/bs";
+import { rates, popular_packages } from "../constants";
 
 
 
-const Card = (level, price, features) => {
+const icons = {
+  "API Development": <BsCodeSquare />,
+  "Full Stack Development": <BsStack />,
+  "Frontend Development": <BsWindow />
+};
+
+const Card = ( pack) => {
+  const {title,subtitle,price,features, cta} = pack.pack
   return (
-    <div className="card_holder flex flex-col gap-4 rounded-2xl mt-3 items-center p-2 bg-black-200">
+    <div className="card_holder flex flex-col gap-4 rounded-3xl mt-3 items-start p-10 bg-black-200 hover:border hover:border-indigo-950 hover:scale-125">
       <div className="heading">
-        <h1 className="text-xl font-bold">Basic API</h1>
-        <p className="font-extralight text-sm italic">CRUD +Auth</p>
+        <h1 className="text-xl font-bold">{title}</h1>
+        <p className="font-extralight text-sm italic">{subtitle}</p>
       </div>
       <div className="price">
-        <h1 className="font-bold text-3xl">$250 – $450</h1>
+        <h1 className="font-bold text-3xl">{price}</h1>
       </div>
       <ul className="features">
-        <li className="flex gap-2 justify-center items-center p-1"><FaArrowAltCircleRight/>API development</li>
-        <li>API development</li>
-        <li>API development</li>
-        <li>API development</li>
+        {features.map((feature, index)=><li key={index} className="flex gap-2 justify-start items-start p-1"><FaArrowAltCircleRight/>{feature}</li>)}
       </ul>
+      {cta&&<button className="bg-slate-100 text-black-200 rounded-xl font-semibold px-4 py-2 w-full hover:bg-white hover:text-black">Get Started</button>}
     </div>
   );
 };
-const Heading = (heading, Description) => {
+const Heading = (rate) => {
+  const {category,description,hourlyRate,packages} = rate.rate
   return (
-    <div className="header max-w-fit p-4">
-      <h1 className={`${styles.sectionSubText} flex gap-4 items-center p-1`}><BsCodeSquare/> API Development</h1>
+    <div className="header p-4 mt-10">
+      <h1 className={`${styles.sectionSubText} flex gap-4 items-center p-1`}>{icons[category]} {category}</h1>
       <p className="mt-1 text-white text-[17px] max-w-3xl">
-        RESTful or GraphQL APIs with NodeJs, Ruby on Rails or Laravel
+        {description}
       </p>
-      <Card />
+      <div className="packages mt-5 flex justify-between">
+{packages.map((pack, index)=><Card pack={pack} key={index}/>)}
+
+      </div>
+      
     </div>
   );
 };
 
-const RateCard = () => {
+const PopularPackages = () =>{
+return(
+  <div className="popular-packages mt-20 ">
+    <h1 className= {`${styles.sectionHeadText} flex items-center gap-4 `}> <GiStarFormation/> Popular Packages.</h1>
+    <div className="packages flex justify-between">
+    {popular_packages.map((pack, index)=> <Card pack={pack} key={index}/>)}
+  </div>
+  </div>
+  
+)
+}
+
+const RateCard = () => {  
   return (
     <motion.div variants={textVariant()}>
       <div>
@@ -52,11 +77,13 @@ const RateCard = () => {
           Rates may vary based on project complexity and integrations.
         </motion.p>
       </div>
-      <motion.div className="mt-10">
-        <Heading />
+      <motion.div className="mt-10">  
+        {rates.map((rate,index)=><Heading key ={index} rate = {rate} />)}
+        
 
         <div className="cards"></div>
       </motion.div>
+<PopularPackages/>
     </motion.div>
   );
 };
