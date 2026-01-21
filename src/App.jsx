@@ -23,8 +23,8 @@ function App() {
 
   
   <Feedbacks/>
+     <RateCard/>
   <div className="relative z-0">
-    <RateCard/>
     <Contact/>
     <StarsCanvas/>
     <Socials/>
