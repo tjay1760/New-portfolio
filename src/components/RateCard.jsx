@@ -22,7 +22,7 @@ const Card = ( pack) => {
   return (
     <div className="w-full bg-black-200 rounded-3xl p-5 md:p-8 flex flex-col gap-4 
                     transition-transform duration-300 hover:scale-[1.02] 
-                    border border-transparent hover:border-indigo-950">
+                    border border-transparent hover:border-indigo-950 overflow-hidden">
       
       <div>
         <h1 className="text-lg md:text-xl font-bold">{title}</h1>
