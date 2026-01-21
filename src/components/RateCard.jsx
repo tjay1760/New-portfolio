@@ -83,7 +83,7 @@ const MoreServices = (services) => {
 const allServices = services.services
   return (
   <div className="more-services mt-20">
-    <h1 className={`${styles.sectionHeadText} flex items-center gap-4 `}><FaPlus/>Additional Services.</h1>
+    <h1 className={`${styles.sectionHeadText} flex items-center gap-4 `}><FaPlus/> Additional Services.</h1>
 <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 mt-6">
   {allServices.map ((service, index)=>
   <li key={index} className="flex flex-col gap-2 border bg-black-100 hover:bg-black hover:scale-[1.02] 
