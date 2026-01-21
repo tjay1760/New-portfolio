@@ -22,7 +22,7 @@ const Card = ( pack) => {
   return (
     <div className="w-full bg-black-200 rounded-3xl p-5 md:p-8 flex flex-col gap-4 
                     transition-transform duration-300 hover:scale-[1.02] 
-                    border border-transparent hover:border-indigo-950">
+                    border border-transparent hover:border-indigo-950 overflow-hidden">
       
       <div>
         <h1 className="text-lg md:text-xl font-bold">{title}</h1>
@@ -83,7 +83,7 @@ const MoreServices = (services) => {
 const allServices = services.services
   return (
   <div className="more-services mt-20">
-    <h1 className={`${styles.sectionHeadText} flex items-center gap-4 `}><FaPlus/>Additional Services.</h1>
+    <h1 className={`${styles.sectionHeadText} flex items-center gap-4 `}><FaPlus/> Additional Services.</h1>
 <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 mt-6">
   {allServices.map ((service, index)=>
   <li key={index} className="flex flex-col gap-2 border bg-black-100 hover:bg-black hover:scale-[1.02] 
