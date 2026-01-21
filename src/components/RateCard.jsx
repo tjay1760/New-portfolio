@@ -87,7 +87,7 @@ const allServices = services.services
 
 const RateCard = () => {  
   return (
-    <motion.div variants={textVariant()} className="">
+    <motion.div variants={textVariant()} className="max-w-7xl mx-auto">
       <div>
         <h1 className={`${styles.sectionHeadText}`}>Rate Card.</h1>
         <motion.p
