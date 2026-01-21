@@ -110,4 +110,4 @@ const RateCard = () => {
   );
 };
 
-export default SectionWrapper(RateCard, "");
+export default RateCard;
