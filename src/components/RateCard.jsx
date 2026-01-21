@@ -20,7 +20,7 @@ const icons = {
 const Card = ( pack) => {
   const {title,subtitle,price,features, cta} = pack.pack
   return (
-    <div className="card_holder flex flex-col gap-4 rounded-3xl mt-3 items-start p-10 bg-black-200 hover:border hover:border-indigo-950 hover:scale-125">
+    <div className="card_holder w-full flex flex-col gap-4 rounded-3xl mt-3 items-start md:p-10 bg-black-200 hover:border hover:border-indigo-950 hover:scale-105">
       <div className="heading">
         <h1 className="text-xl font-bold">{title}</h1>
         <p className="font-extralight text-sm italic">{subtitle}</p>
@@ -43,7 +43,7 @@ const Heading = (rate) => {
       <p className="mt-1 text-white text-[17px] max-w-3xl">
         {description}
       </p>
-      <div className="packages mt-5 md:flex justify-between">
+      <div className="packages mt-5 flex flex-col gap-4 md:flex-row md:justify-between">
 {packages.map((pack, index)=><Card pack={pack} key={index}/>)}
 
       </div>
@@ -69,7 +69,7 @@ const allServices = services.services
   return (
   <div className="more-services mt-20">
     <h1 className={`${styles.sectionHeadText} flex items-center gap-4 `}><FaPlus/>Additional Services.</h1>
-<ul className="md:grid grid-cols-5 gap-4">
+<ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4">
   {allServices.map ((service, index)=>
   <li key={index} className="flex flex-col gap-2 border bg-black-100 hover:bg-black hover:scale-105 border-gray-900 hover:border-gray-700 p-4 rounded-xl">
     <p className="font-base">{service.title}</p>
