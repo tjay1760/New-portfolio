@@ -66,7 +66,6 @@ return(
 
 const MoreServices = (services) => {
 const allServices = services.services
-console.log(allServices)
   return (
   <div className="more-services mt-20">
     <h1 className={`${styles.sectionHeadText} flex items-center gap-4 `}><FaPlus/>Additional Services.</h1>

@@ -60,6 +60,7 @@ import emailIcon from './gmail_icon.png'
 import fuhidy from './testimonials/fuhidy.jpg'
 import troos from './testimonials/troos.jpg'
 import shakur from './testimonials/shakur.jpg'
+import profilepic from './profile-pic.jpeg'
 export {
   emailIcon,
   youtube,
@@ -107,5 +108,5 @@ export {
   tesla,
   carrent,
   jobit,
-  tripguide,troos,shakur,fuhidy,gtcsnap,maralife,totohouse,tulibooks,pwdsnap,pawaai
+  tripguide,troos,shakur,fuhidy,gtcsnap,maralife,totohouse,tulibooks,pwdsnap,pawaai,profilepic
 };

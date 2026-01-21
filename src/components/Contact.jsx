@@ -5,6 +5,8 @@ import { SectionWrapper } from '../hoc'
 import { slideIn } from '../utils/motion'
 import { EarthCanvas } from './canvas'
 import emailjs from '@emailjs/browser'
+import { ToastContainer, toast } from 'react-toastify';
+
 
 
 const Contact = () => {
@@ -39,6 +41,7 @@ message:""
         ()=>{
           setLoading(false)
           alert('Thank you, I will get back to you soon!')
+          toast.success("Thank you, I will get back to you soon!")
  setForm({
   name:'',
   email:'',
@@ -48,6 +51,7 @@ message:""
           setLoading(false)
           console.log(error)
           alert("Message not sent: Something went wrong")
+          toast.error("Message not sent: Something went wrong")
         }
        )
   }
@@ -58,6 +62,17 @@ message:""
       variants ={slideIn('left','tween',0.2,1)}
       className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
+        <ToastContainer
+  position="top-right"
+  autoClose={3000}
+  hideProgressBar={false}
+  newestOnTop={false}
+  closeOnClick
+  pauseOnHover
+  draggable
+  theme="dark"
+/>
+
 <p className={styles.sectionSubText}>Get in Touch</p>
 <h3 className={styles.sectionHeadText}>Contact.</h3>
 <form
