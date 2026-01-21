@@ -349,5 +349,224 @@ import {
 
   ];
   const softSkills = ["Leadership", "Analytical Thinking", "Time management", "Collaboration", "Teamwork","Creativity"]
+
+  const rates = [
+    {
+      "category": "API Development",
+      "description": "RESTful or GraphQL APIs with Python (Flask/FastAPI) or Laravel",
+      "hourlyRate": "$30/hr",
+      "packages": [
+        {
+          "title": "Basic API",
+          "subtitle": "CRUD + Auth",
+          "price": "$250 – $450",
+          "features": [
+            "User management",
+            "Data storage",
+            "Login/signup",
+            "Basic security"
+          ]
+        },
+        {
+          "title": "Intermediate API",
+          "subtitle": "3rd party integrations",
+          "price": "$600 – $900",
+          "features": [
+            "M-Pesa integration",
+            "Stripe payments",
+            "Twilio SMS",
+            "External APIs"
+          ]
+        },
+        {
+          "title": "Advanced API",
+          "subtitle": "Enterprise-grade",
+          "price": "$1,000 – $1,800",
+          "features": [
+            "Multi-service architecture",
+            "Analytics & caching",
+            "Scalability",
+            "Performance optimization"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Full Stack Development",
+      "description": "Complete solution — frontend + backend + database + deployment",
+      "retainer": "$400 – $800/month",
+      "packages": [
+        {
+          "title": "Startup MVP",
+          "subtitle": "SaaS Prototype",
+          "price": "$800 – $1,500",
+          "features": [
+            "Dashboard interface",
+            "User authentication",
+            "Database setup",
+            "Cloud deployment"
+          ]
+        },
+        {
+          "title": "Business Platform",
+          "subtitle": "Mid-tier solution",
+          "price": "$1,800 – $3,000",
+          "features": [
+            "eCommerce functionality",
+            "Inventory management",
+            "Admin portal",
+            "Payment integration"
+          ]
+        },
+        {
+          "title": "Enterprise Platform",
+          "subtitle": "Custom solution",
+          "price": "$3,500 – $6,000+",
+          "features": [
+            "Complex CRM system",
+            "AI integration",
+            "Multi-tenant SaaS",
+            "Advanced analytics"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Frontend Development",
+      "description": "Modern interfaces with React, Svelte, Vue, or Astro",
+      "packages": [
+        {
+          "title": "Landing Page",
+          "subtitle": "Single page app",
+          "price": "$200 – $450",
+          "features": [
+            "Responsive design",
+            "Modern animations",
+            "SEO optimized",
+            "Fast loading"
+          ]
+        },
+        {
+          "title": "Business Website",
+          "subtitle": "3–6 pages",
+          "price": "$500 – $900",
+          "features": [
+            "Multi-page site",
+            "CMS integration",
+            "Contact forms",
+            "Analytics setup"
+          ]
+        },
+        {
+          "title": "Dynamic Frontend",
+          "subtitle": "API integrated",
+          "price": "$1,000 – $1,600",
+          "features": [
+            "Real-time updates",
+            "User dashboards",
+            "Complex interactions",
+            "State management"
+          ]
+        }
+      ]
+    }
+  ]
+
+  const popular_packages = [
+    {
+      "id": "starter",
+      "title": "Starter Package",
+      "tagline": "Perfect for new businesses",
+      "price": "$450",
+      "features": [
+        "Professional landing page",
+        "API contact form",
+        "2-week support",
+        "Mobile responsive",
+        "SEO basics"
+      ],
+      "cta": "Get Started",
+      "highlighted": false
+    },
+    {
+      "id": "business-pro",
+      "title": "Business Pro",
+      "tagline": "Complete business solution",
+      "price": "$1,200",
+      "badge": "Most Popular",
+      "features": [
+        "Full website (5–8 pages)",
+        "Backend CMS",
+        "SEO setup & optimization",
+        "Analytics integration",
+        "1-month support"
+      ],
+      "cta": "Get Started",
+      "highlighted": true
+    },
+    {
+      "id": "mvp-saas",
+      "title": "MVP / SaaS Build",
+      "tagline": "Full-stack application",
+      "price": "$2,000+",
+      "features": [
+        "Complete web application",
+        "User authentication",
+        "Database & API",
+        "Admin dashboard",
+        "Cloud deployment",
+        "3-month support"
+      ],
+      "cta": "Get Started",
+      "highlighted": false
+    }
+  ]
+
+  const extraServices = [
+  {
+    "title": "M-Pesa / Airtel Integration",
+    "priceRange": "$150 – $400"
+  },
+  {
+    "title": "Custom Admin Dashboard",
+    "priceRange": "$250 – $700"
+  },
+  {
+    "title": "UI/UX Design (Figma to code)",
+    "priceRange": "$150 – $350"
+  },
+  {
+    "title": "Domain + Hosting Setup",
+    "priceRange": "$50 – $150"
+  },
+  {
+    "title": "AI Chatbot Integration",
+    "priceRange": "$300 – $700"
+  },
+  {
+    "title": "Performance Optimization",
+    "priceRange": "$250 – $450"
+  },
+  {
+    "title": "Security Audit & Updates",
+    "priceRange": "$200 – $400"
+  },
+  {
+    "title": "Tech Consultation",
+    "priceRange": "$100/hr",
+    "description": "Business automation, SaaS planning"
+  },
+  {
+    "title": "Code Review / Mentorship",
+    "priceRange": "$60/hr",
+    "description": "Code quality, best practices"
+  },
+  {
+    "title": "Workshop / Training",
+    "priceRange": "$300/day",
+    "description": "In-person or online sessions"
+  }
+]
+
   
-  export { services, technologies, experiences, testimonials, projects, softSkills };
+  export { services, technologies, experiences, testimonials, projects, softSkills, rates, popular_packages, extraServices };
