@@ -32,7 +32,7 @@ import {
     tripguide,
     threejs,
     python,
-    ruby,troos,shakur,fuhidy, gtcsnap,maralife,totohouse,tulibooks,pwdsnap,pawaai,
+    ruby,troos,shakur,fuhidy, gtcsnap,maralife,totohouse,tulibooks,pwdsnap,pawaai,youdontknowyourself
   } from "../assets";
   
   export const navLinks = [
@@ -345,6 +345,29 @@ import {
       source_code_link: "https://github.com/tjay1760/Mara-Life",
       live_link: "https://maralife.netlify.app/",
       is_private: false,
+    },
+        {
+      name: "KNOW YOURSELF",
+      description:
+        "You don't know yourself is a platform where users can play game participate in quizes and even do phychometry tests to know themselves better.",
+      tags: [
+        {
+          name: "TailwindCSS",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "PostgresSQL",
+          color: "green-text-gradient",
+        },
+        {
+          name: "React",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: youdontknowyourself,
+      source_code_link: "https://github.com/tjay1760/Mara-Life",
+      live_link: "https://youdontknowyourself.netlify.app/",
+      is_private: true,
     },
 
   ];
