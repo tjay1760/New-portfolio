@@ -61,6 +61,7 @@ import fuhidy from './testimonials/fuhidy.jpg'
 import troos from './testimonials/troos.jpg'
 import shakur from './testimonials/shakur.jpg'
 import profilepic from './profile-pic.jpeg'
+import youdontknowyourself from './youDontKnowyourself.png'
 export {
   emailIcon,
   youtube,
@@ -108,5 +109,5 @@ export {
   tesla,
   carrent,
   jobit,
-  tripguide,troos,shakur,fuhidy,gtcsnap,maralife,totohouse,tulibooks,pwdsnap,pawaai,profilepic
+  tripguide,troos,shakur,fuhidy,gtcsnap,maralife,totohouse,tulibooks,pwdsnap,pawaai,profilepic,youdontknowyourself
 };
